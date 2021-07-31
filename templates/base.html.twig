@@ -2,18 +2,149 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{% block title %}{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+            <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+            <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+            <!-- Google fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Pacifico&family=Source+Code+Pro&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="/css/css/carousel.css">
         {% endblock %}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
+
     </head>
     <body>
+    <div  class="nav center">
+
+
+        <a href="/" class="logo_"><img src="/img/logo.png" alt="Logo Conciergerie"></a>
+        <input type="checkbox" name="" class="checkBtn" >
+        <ol class="center">
+            <a href="/"><li>Home</li></a>
+            <a href="/private_residence"><li>Private Residences</li></a>
+            <a href="/private_palace"><li>Private Place</li></a>
+            <a href="/vip_trips"><li>VIP Trips</li></a>
+            <a href="/luxury_cars"><li>Luxury Cars</li></a>
+            <a href="/concierge_services"><li>Conciergerie Services</li></a>
+            <a href="/about_us"><li>About</li></a>
+            <a href="/contact"><li>Contact</li></a>
+            <a href="tel:123-456-7890" class=""><i class="fas fa-phone-alt"></i> +212 661216388</a>
+            <div class="dropdown-translate">
+                <a href="" class="dropbtn-translate" style="font-size:35px ; margin-right: 0px;"><i class="fas fa-language"></i></a>
+                <div class="dropdown-content-translate">
+                    <a href="/translation/en"><img style="width:30px; height:30px; " src="/img/Flags/united-states.png" style="display:inline-block;">EN</a>
+                    <a href="/translation/fr" ><img style="width:30px; height:30px; " src="/img/Flags/france.png" style="display:inline-block;">FR</a>
+                    <a href="#"><img style="width:30px; height:30px; " src="/img/Flags/spain.png" style="display:inline-block;">ES</a>
+                    <a href="/translation/ar"><img style="width:30px; height:30px; " src="/img/Flags/morocco.png" style="display:inline-block;">AR</a>
+                    <a href="#"><img style="width:30px; height:30px; " src="/img/Flags/russia.png" style="display:inline-block;">Rus</a>
+                    <a href="#"><img style="width:30px; height:30px; "src="/img/Flags/china.png" style="display:inline-block;">Chi</a>
+                    </ul>
+                </div>
+            </div>
+        </ol>
+
+    </div>
         {% block body %}{% endblock %}
+    <div class="page-wrapper">
+        <div id="waterdrop"></div>
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+                <a href="/"><img src="/img/logo.png" alt=""></a>
+
+
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Contact</a>
+                </p>
+
+                <p class="footer-company-name">Marrakech Concierge &copy; 2019</p>
+                <div class="dropdown">
+                    <button class="dropbtn">Latest News<i class="fas fa-caret-square-up"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Marrakech - Dakhla with Royal Air</a>
+                        <a href="#">Golf competition</a>
+                        <a href="#">Marrakech Casinos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Marrakech</span> Marrakech, Morocco</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+212 661216388</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com"> kechtrans@gmail.com</a></p>
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About</span>
+                    we offer luxury concierge services all over Morocco &amp; Concierge.
+                </p>
+                <input class="c-checkbox" type="checkbox" id="checkbox">
+                <div class="c-formContainer">
+                    <form class="c-form" action="">
+                        <input class="c-form__input" placeholder="New letter" name="newsletter" type="text"  required>
+                        <label class="c-form__buttonLabel" for="checkbox">
+                            <button class="c-form__button" type="button">Send</button>
+                        </label><br>
+                        <label for="" class="sub_input">Let's stay in touch !</label>
+
+                    </form>
+                </div>
+                <div class="footer-icons">
+
+                    <a  href="https://web.facebook.com/semoncef"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/concierge_vip_marrakech/"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" > <button class="c-form__Register" type="button">SIGN UP</button></a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    {% block javascripts %}
+    <script src="/js/header-slider.js" ></script>
+    <script src="/js/carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/jQuery.min.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
+    </script>
+    {%  endblock %}
+
     </body>
+
 </html>
+

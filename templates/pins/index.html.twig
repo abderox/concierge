@@ -1,0 +1,259 @@
+{% extends 'base.html.twig' %}
+{% block title %}Conciergerie-Marrakech{% endblock %}
+{% block body %}
+    <link rel="stylesheet" href="{{ asset('css/css/style.css') }}">
+
+    <div class="img-slider">
+      
+      <div class="slide active">
+        <img src="http://www.concierge-marrakech.ma/img/slider/slide1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img  src="http://www.concierge-marrakech.ma/img/slider/slide.jpg" alt="">
+        <div class="info">
+          <h2>Slide 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="http://www.concierge-marrakech.ma/img/slider/royal_mansour_marrakech.jpg" alt="">
+        <div class="info">
+          <h2>Slide 03</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/img/6.jpg" alt="">
+        <div class="info">
+          <h2>Slide 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/img/3.jpg" alt="">
+        <div class="info">
+          <h2>Slide 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+ 
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+    <div class="hero hero-about" id="hero">
+      <h1>About Concierge Marrakech</h1><br>
+      <p>Located in Marrakech , we offer luxury concierge services all over Morocco.
+         We propose a variety of services starting from door to door concierge service 
+         to luxury cars and palaces location.<span id="dots">...</span><span id="more"> We invite you to indulge your passions on an immersive, small
+            group journey, offering the perfect blend of guided and independent exploration.
+          It’s now easier than ever to plan and book your whole vacation—where you have the whole house
+           to yourself, and the only thing you have to share is creating memories. </span></p>
+        <button class="helo" onclick="myfunction()" id="myBtn">More<i class="fas fa-caret-square-down"></i></button>
+      </div>
+      <div class="hero hero-prom" id="hero">
+        <h1>Our promises</h1><br>
+        <p>  0% client comission
+          You pay the same price if go directly to services providers
+          We trust our clients No prepayment is needed payment on arrival<span id="dots1">...</span><span id="more1">  We get you the bests deals for the best products</span></p>
+          <button class="helo" onclick="myfunction1()" id="myBtn1">More<i class="fas fa-caret-square-down"></i></button>
+        </div>
+        
+
+  
+        <img class="image-divider"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/101448/wedding-divider-png-9.png" />
+  
+
+
+
+        <div class="figures">
+        <figure class="image-block">
+          <h1>Priavte Residence</h1>
+          <img src="http://www.concierge-marrakech.ma/img/Residence3main.jpeg" alt="" />
+          <figcaption>
+            <h3>
+              More Info
+            </h3>
+            <p>With family, friends or lovers; To visit, discover, practice an activity or rest, we offer you the best in the ocher city</p>
+            
+              <a href="/private_residence" class="button">More Info</a>
+           
+          </figcaption>
+        </figure>
+        <figure class="image-block">
+          <h1>Luxury Cars</h1>
+          <img src="http://www.concierge-marrakech.ma/img/luxurycars.jpg" alt="" />
+          <figcaption>
+            <h3>
+              More Info
+            </h3>
+            <p>You will find at Concierge Marrakech luxury cars for purchase or rental.You will find at Concierge Marrakech luxury cars for purchase or rental.</p>
+            
+              <a href="/luxury_cars" class="button">More Info</a>
+           
+          </figcaption>
+        </figure>
+        <figure class="image-block">
+          <h1>Private Palace</h1>
+          <img src="http://www.concierge-marrakech.ma/img/mimouna.jpg" alt="" />
+          <figcaption>
+            <h3>
+              More Info
+            </h3>
+            <p>With family, friends or lovers; To visit, discover, practice an activity or rest, we offer you the best palaces in the ocher city</p>
+            
+              <a href="/private_palace" class="button">More Info</a>
+           
+          </figcaption>
+        </figure>
+        <figure class="image-block">
+          <h1>Vip Trips</h1>
+          <img src="http://www.concierge-marrakech.ma/img/Trip21.jpeg" alt="" />
+          <figcaption>
+            <h3>
+              More Info
+            </h3>
+            <p>With family, friends or lovers; To visit, discover Morocco especially Marrakech , we offer you the best trips in the world.</p>
+            
+              <a href="/vip_trips" class="button">More Info</a>
+           
+          </figcaption>
+        </figure>
+      </div>
+      <div class="border-image-divider"></div>
+        <section class="parallax">
+          <div class="parallax_inner">
+       <h1 id="lol">Testimonials</h1>
+       <div class="slideshow-container">
+       <div class="mySlides fade">
+        
+        <div class="div_fade">
+          <div><h2>JOHN SNOW</h2></div>
+          <div class="sub_div">LEADER</div>
+          <br>
+          <br>
+          <p class="stars">
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </p>
+          <div class="motto_">leader</div>
+          <div class="backquote"><i class="fas fa-quote-right"></i></div>
+        </div>
+      
+      </div>
+    
+      <div class="mySlides fade">
+        
+        
+        <div class="div_fade">
+          <div><h2>MICHAEL B JORDON</h2></div>
+          <div class="sub_div">CEO</div>
+          <br>
+          <br>
+          <p class="stars">
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </p>
+          <div class="motto_">CEO</div>
+          <div class="backquote"><i class="fas fa-quote-right"></i></div>
+        </div>
+      
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+ 
+          </div>
+      </section>
+      <img class="image-divider"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/101448/wedding-divider-png-9.png" />
+      <div class="container__">
+        
+        <ul class="liste">
+            <li><a onclick="change('http://www.concierge-marrakech.ma/img/marrakech-night.jpg','/Marrakech-by-night')"  class="href">MARRAKECH BY NIGHT <span>MODERN SAFE LUXURIOUS</span></a></li>
+            <li><a onclick="change('/img/driver.jpg','/Drivers-on-call')"  class="href">DRIVERS ON CALL<span>EXPERIENCE AND CLASS</span></a> </li>
+            <li><a onclick="change('http://www.concierge-marrakech.ma/img/services.jpg','/concierge_services')"  class="href">CONCIERGE SERVICES<span>EVERYTHING YOU NEED</span></a></li>
+            <li><a onclick="change('http://www.concierge-marrakech.ma/img/event.gif','/Private-events')"  class="href">PRIVATE EVENTS<span>LET US DO THE WORK</span></a></li>
+        </ul>
+      
+        <div class="div_liste">
+          <img style="display:block;" id="bigpic" src="http://www.concierge-marrakech.ma/img/marrakech-night.jpg" />
+        <a href="/Marrakech-by-night" id="bty" class="bty">Details</a>
+        </div>
+    </div>
+   
+    
+    <img class="image-divider"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/101448/wedding-divider-png-9.png" />
+      <section class="partners">
+       
+      <div class="gallery">
+        <h1>Partners</h1>
+        <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src="http://www.concierge-marrakech.ma/img/partners/Partner2.jpg" data-index="1">
+            <img class="gallery-item gallery-item-2" src="http://www.concierge-marrakech.ma/img/partners/Partner3.jpg" data-index="2">
+            <img class="gallery-item gallery-item-3" src="http://www.concierge-marrakech.ma/img/partners/Partner4.jpeg" data-index="3">
+            <img class="gallery-item gallery-item-4" src="http://www.concierge-marrakech.ma/img/partners/Partner2.jpg" data-index="4">
+            <img class="gallery-item gallery-item-5" src="http://www.concierge-marrakech.ma/img/partners/Partner4.jpeg" data-index="5">
+        </div>
+        <div class="gallery-controls"></div>
+        
+      </div>
+      <div class="partners-links">
+      <a href="/partner/2">Quad Biking Marrakech</a>
+      <a href="/partner/3">Prestige</a>
+      <a href="/partner/4">ElWaha Travel</a>
+    </div>
+    </section>
+      <div></div>
+  <div class="container_">
+    <a href="https://web.facebook.com/semoncef" ><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/concierge_vip_marrakech/" ><i class="fab fa-instagram"></i></a>
+    <a href="mailto:kechtrans@gmail.com" ><i class="fa fa-envelope"></i></a>
+    <input class="rotating" type="checkbox" name="" id="btn">
+  </div>
+
+  <!--Go Up-->
+  <button onclick="topFunction()" id="goUp" title="Go to top">
+
+  </button>
+
+
+
+{% endblock %}
+{% block javascripts %}
+  {{ parent() }}
+  <script>
+    const changel = src => {
+      document.getElementById('bigpic').src = src
+      document.getElementById('bty').href="/";
+
+    }
+    function change(src,href)
+    {
+      document.getElementById('bigpic').src = src
+      document.getElementById('bty').href=href;
+    }
+
+  </script>
+{%  endblock %}
+    
+    
+
+
+
