@@ -34,12 +34,12 @@ class PinsController extends AbstractController
         return $this->render('pins/trips.html.twig');
     }
     /**
-     * @Route("/contact", name="app_contact")
+     * @Route("/test", name="app_test")
      */
     public function contact(): Response
     {
 
-        return $this->render('pins/contactus.html.twig');
+        return $this->render('pins/test.html.twig');
     }
     /**
      * @Route("/concierge_services", name="app_services")
