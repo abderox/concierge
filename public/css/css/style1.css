@@ -29,7 +29,9 @@ body{
   display: inline-block;
   margin-right: -10px;
 }
-
+.dropdown-content-translate a{
+  color:#0a1931 !important;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content-translate {
   display: none;
