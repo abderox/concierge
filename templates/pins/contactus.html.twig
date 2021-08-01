@@ -67,13 +67,13 @@
               <div class="row">
                 <div class="col-md-12 form-group mb-5">
                   <label for="message" class="col-form-label">Message *</label>
-                  <textarea class="form-control" name="form[Message] id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
+                  <textarea class="form-control" name="form[Message]" id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
                  <input type="submit" value="Send Message" name="form[Send_Request]" class="btn btn-primary rounded-0 py-2 px-4"> 
-                 <input type="hidden" id="form__token" name="form[_token]" value="{{ csrf_token('toid') }}" />
+                 <input type="hidden" id="form__token" name="form[_token]" value="" />
 
                   <span class="submitting"></span>
                 </div>
