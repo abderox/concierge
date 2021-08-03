@@ -163,7 +163,14 @@ body{
 }
 @media (max-width: 1000px)
 {
-
+  .container_{
+    position: fixed;
+    right: 50px !important;
+    bottom: 1%;
+  }
+  #goUp {
+    right: 60px;
+  }
   #hero h1{
     font-size: 27px;
   }
