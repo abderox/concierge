@@ -171,7 +171,7 @@ body{
 }
   .container_{
     position: fixed;
-    right: 30px !important;
+    right: 50px !important;
     bottom: 1%;
   }
   #hero h1{
