@@ -17,6 +17,50 @@
             background-size: cover !important;
             background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.767) 100%),url("http://www.concierge-marrakech.ma/img/slider/slide1.jpg");
         }
+        .portfolio-link img {
+            width: 416px;
+            height: 278px;
+        }
+        .alertt {
+            width: 30%;
+            margin: 0px auto;
+            padding: 30px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 0 15px 5px #ccc;
+            height: 40px;
+        }
+        h5{
+            margin-top: -20px;
+            margin-bottom: -25px;
+        }
+
+        .close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            opacity: 0.5;
+            right: 15px;
+            top: 10px;
+            text-align: center;
+            font-size: 1.6em;
+            cursor: pointer;
+        }
+
+
+        .warning-alert {
+            background-color: #ffd48a;
+            border-left: 5px solid #8a5700;
+        }
+        .warning-alert .close {
+            border-color: #8a5700;
+            color: #8a5700;
+
+        }
+        section{
+            background-color: #efefef !important;
+            background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png") !important;
+        }
     </style>
 
     <div id="page-top">
@@ -29,10 +73,14 @@
             </div>
         </header>
          <!-- About-->
-       
-        
+
+
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
+            <div class="alertt warning-alert">
+                <h5>Tip : Please <strong>Hover </strong>images to see details !</h5>
+                <a class="close">&times;</a>
+            </div>
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our services</h2>
@@ -44,12 +92,12 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Private Palace</h2> With family, friends or lovers; To visit, discover, practice an activity or rest, we offer you the best palaces in the ocher city</div></div>
+                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>One Day Excursion</h2> Make your Reservation for any restaurant or club</div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/mimouna.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/DayExcursion.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/private_palace"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'One Day Excursion'}) }}" class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                                 
                             </div>
                         </div>
@@ -59,13 +107,13 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content" style="font-size: 17px;"><div class="text-hover"><h2>Private Residence</h2>With family, friends or lovers; To visit, discover, practice an activity or rest, we offer you the best in the ocher city </div></div>
+                                    <div class="portfolio-hover-content" style="font-size: 17px;"><div class="text-hover"><h2>Tables Reservation</h2>Make your Reservation for any restaurant or club </div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/Residence/Residence1main.jpeg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/RestauReservation.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/private_residence" class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
-                              
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Tables Reservation'}) }}" class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+
                             </div>
                         </div>
                     </div>
@@ -74,12 +122,12 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Vip Trips</h2>With family, friends or lovers; To visit, discover Morocco especially Marrakech , we offer you the best trips in the world</div></div>
+                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>night transport</h2>Transport for an evening out </div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/Trips/Trip1main.jpeg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/Transport.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/vip_trips"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'night transport'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                           
                             </div>
                         </div>
@@ -89,12 +137,12 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Luxury Cars</h2> You will find at Concierge Marrakech luxury cars for purchase or rental </div></div>
+                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Luxury Cars</h2>Cars with chauffeur on order per hour </div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/cars/bentley.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/voiturechauff.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/luxury_cars"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Cars with chauffeur on ordre'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                              
                             </div>
                         </div>
@@ -106,10 +154,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><div class="text-hover"><h2>Excursion</h2>One Day Excursion ,A little one day trip to various locations </div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/DayExcursion.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/quad.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/concierge_services"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Excursion Quad'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                               
                             </div>
                         </div>
@@ -119,12 +167,12 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Reservation</h2>Make your Reservation for any restaurant or club</div></div>
+                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Hot air baloon</h2>Little trip in a hot air baloon</div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/RestauReservation.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/mongolfi%C3%A9re.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/concierge_services"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Hot air baloon'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                                 
                             </div>
                         </div>
@@ -134,12 +182,12 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Private events</h2> Marrakech is the city of all possibilities to party! You just have to imagine and let us do it</div></div>
+                                    <div class="portfolio-hover-content"><div class="text-hover"><h2>Hot air baloon</h2> Little trip in a hot air baloon</div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/soir%C3%A9epriv%C3%A9e.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/quadETdromadaire.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/concierge_services"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Quade and dromadaire'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                                 
                             </div>
                         </div>
@@ -151,10 +199,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><div class="text-hover"><h2>Visite Cities with guide</h2> Organised Trips to morrocan cities with the company of a guide </div></div>
                                 </div>
-                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/visiteGuide.jpg" alt="..." />
+                                <img class="img-fluid" src="http://www.concierge-marrakech.ma/img/conciergeServices/soir%C3%A9epriv%C3%A9e.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/concierge_services"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_reservation',{nam: 'Private events organisations'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">Go to Reservation</a></div>
                                 
                             </div>
                         </div>
@@ -188,4 +236,5 @@
             <script src="/js/scripts.js"></script>
 
             <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
         {% endblock %}

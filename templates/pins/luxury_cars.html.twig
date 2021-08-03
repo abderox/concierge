@@ -26,7 +26,51 @@
                 background-attachment: scroll;
                 background-position: center center !important;
                 background-size: cover !important;
-                background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.767) 100%),url("https://wallpapercave.com/wp/wp5969519.jpg");
+                background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.767) 100%),url("/img/car.jpg");
+            }
+            .alertt {
+                width: 30%;
+                margin: 0px auto;
+                padding: 30px;
+                position: relative;
+                border-radius: 5px;
+                box-shadow: 0 0 15px 5px #ccc;
+                height: 40px;
+            }
+            h5{
+                margin-top: -20px;
+                margin-bottom: -25px;
+            }
+
+            .close {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                opacity: 0.5;
+                right: 15px;
+                top: 10px;
+                text-align: center;
+                font-size: 1.6em;
+                cursor: pointer;
+            }
+
+
+            .warning-alert {
+                background-color: #ffd48a;
+                border-left: 5px solid #8a5700;
+            }
+            .warning-alert .close {
+                border-color: #8a5700;
+                color: #8a5700;
+
+            }
+            @media (max-width: 1000px)
+            {
+                .alertt{
+                    width: 95%;
+
+                }
+
             }
         </style>
     <div class="body" id="page-top">
@@ -45,7 +89,12 @@
         
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
+            <div class="alertt warning-alert">
+                <h5>Tip : Please <strong>Hover </strong>images to see details !</h5>
+                <a class="close">&times;</a>
+            </div>
             <div class="container">
+
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Cars</h2>
                     <h3 class="section-subheading text-muted" style="color: #001f3f !important; "></h3>
@@ -65,7 +114,7 @@
                                 
                             </div>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/private_palace"class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_cars_reservation',{nam: 'Mercedes S350'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
                                 
                             </div>
                         </div>
@@ -84,7 +133,7 @@
                                 
                             </div>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/private_residence" class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_cars_reservation',{nam: 'Mercedes S350'}) }}" class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
                               
                             </div>
                         </div>
@@ -103,7 +152,7 @@
                                 
                             </div>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><a href="/vip_trips"class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
+                                <div class="portfolio-caption-heading"><a href="{{ path('app_cars_reservation',{nam: 'Mercedes S350'}) }}"class="thumbnail btn btn-dark" data-gallery="gallery1">More Details</a></div>
                           
                             </div>
                         </div>

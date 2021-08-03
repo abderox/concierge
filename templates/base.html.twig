@@ -67,16 +67,16 @@
 
 
                 <p class="footer-links">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     ·
-                    <a href="#">About</a>
+                    <a href="/about_us">About</a>
                     ·
-                    <a href="#">Contact</a>
+                    <a href="/test">Contact</a>
                 </p>
 
                 <p class="footer-company-name">Marrakech Concierge &copy; 2019</p>
                 <div class="dropdown">
-                    <button class="dropbtn">Latest News<i class="fas fa-caret-square-up"></i></button>
+                    <button class="dropbtn">Latest News{{ ' ' }}<i class="fas fa-caret-up"></i></button>
                     <div class="dropdown-content">
                         <a href="#">Marrakech - Dakhla with Royal Air</a>
                         <a href="#">Golf competition</a>
@@ -99,7 +99,7 @@
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com"> kechtrans@gmail.com</a></p>
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kechtrans@gmail.com" target="_blank"> kechtrans@gmail.com</a></p>
                 </div>
 
             </div>
@@ -143,6 +143,11 @@
     <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
     <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
     </script>
+        <script>$(".close").click(function() {
+                $(this)
+                    .parent(".alertt")
+                    .fadeOut();
+            });</script>
     {%  endblock %}
 
     </body>

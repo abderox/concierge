@@ -407,6 +407,7 @@ transition: 0.3s;
   background: linear-gradient(to top, transparent 0%, #001f3f0e 100%);
   margin-right: 10px;
   top: 0;
+  right: 5px;
   padding: 0;
 
 }
@@ -1074,7 +1075,7 @@ backdrop-filter: blur( 28.5px  );
   
 }
 
-.dropdown-content a:hover {background-color: #d4af37}
+.dropdown-content a:hover {background-color: #d4af37 ; color:#0a1931 !important;}
 
 .dropdown:hover .dropdown-content {
   display: block;

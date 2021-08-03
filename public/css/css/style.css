@@ -95,6 +95,7 @@ body{
 .img-slider .slide img{
   z-index: 1;
   width: 100%;
+  height:650px;
   border-radius: 5px;
 }
 
@@ -146,6 +147,9 @@ body{
 }
 @media (max-width: 1400px)
 {
+  .container__ li{
+    background-color: rgba(255, 255, 255, 0.29);
+  }
   .helo{
   font-size:small;
   width:60px;;
@@ -162,7 +166,9 @@ body{
 }
 @media (max-width: 1000px)
 {
-
+.container__ li{
+  background-color: rgba(255, 255, 255, 0.29);
+}
   #hero h1{
     font-size: 27px;
   }
@@ -176,13 +182,19 @@ body{
     margin-top: 5px !important;
   }
 
+
 }
 @media (max-width: 820px){
   .img-slider{
     width: 100%;
     height: 500px;
   }
+  .img-slider .slide img{
 
+    height: 505px;
+
+
+  }
   .img-slider .slide .info{
     padding: 10px 25px;
     position: absolute;
@@ -209,6 +221,7 @@ body{
     height: 10px;
     margin: 8px;
   }
+
 }
 
 @media (max-width: 620px){
@@ -236,6 +249,17 @@ body{
 
   .img-slider .navigation{
     bottom: 15px;
+  }
+  .img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+  .img-slider .slide img{
+
+    height: 400px;
+
+
   }
 
   .img-slider .navigation .btn{
@@ -406,6 +430,7 @@ transition: 0.3s;
   margin-right: 10px;
   top: 0;
   padding: 0;
+  right: 5px;
 
 }
 .div_liste{
@@ -592,6 +617,7 @@ input{
   .helo i{
     margin-left: 4px !important;
   }
+
 
   /*Footer*/
 
@@ -838,7 +864,7 @@ margin-left: 5px;
     width: 90px;
     height: 40px;
     font-size: 12px !important;
-    background-color: #001f3f67 !important;
+    background-color: #001f3f ;
   }
   .image-divider{
     width: 350px !important;
@@ -1064,7 +1090,7 @@ backdrop-filter: blur( 28.5px  );
 
 }
 
-.dropdown-content a:hover {background-color: #d4af37}
+.dropdown-content a:hover {background-color: #d4af37 ; color:#0a1931 !important;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -1212,8 +1238,9 @@ backdrop-filter: blur( 28.5px  );
         }
         .bty:hover {
           color: #001f3fd7;
-          background-color: #d4af37;
+          background-color: #d4af37 !important;
         }
+
 
         /*cards*/
         figure {

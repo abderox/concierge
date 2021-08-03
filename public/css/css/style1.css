@@ -413,6 +413,7 @@ transition: 0.3s;
   background: linear-gradient(to top, transparent 0%, #001f3f0e 100%);
   margin-right: 10px;
   top: 0;
+  right: 5px;
   padding: 0;
 
 }
@@ -845,7 +846,7 @@ margin-left: 5px;
     width: 90px;
     height: 40px;
     font-size: 12px !important;
-    background-color: #001f3f67 !important;
+
   }
   .image-divider{
     width: 350px !important;
@@ -1073,7 +1074,7 @@ backdrop-filter: blur( 28.5px  );
   
 }
 
-.dropdown-content a:hover {background-color: #d4af37}
+.dropdown-content a:hover {background-color: #d4af37 ; color:#0a1931 !important;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -1214,9 +1215,12 @@ backdrop-filter: blur( 28.5px  );
           border-radius: 5px;
           text-align: center;   
         }
+        .bty {
+          list-style: none;
+        }
         .bty:hover {
           color: #001f3fd7;
-          background-color: #d4af37;
+          background-color: #d4af37; !important;
         }
 
         /*cards*/

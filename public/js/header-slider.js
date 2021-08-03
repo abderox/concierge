@@ -71,12 +71,12 @@ var hero=document.getElementById(hero);
 
 if (dots.style.display === "none") {
 dots.style.display = "inline";
-btnText.innerHTML = "More"+'<i class="fas fa-caret-square-down"></i>'; 
+btnText.innerHTML = "More "+'<i class="fas fa-caret-up"></i>';
 moreText.style.display = "none";
 hero.style.height='240px';
 } else {
 dots.style.display = "none";
-btnText.innerHTML = "Less"+'<i class="fas fa-caret-square-up"></i>'; 
+btnText.innerHTML = "Less "+'<i class="fas fa-caret-up"></i>';
 moreText.style.display = "inline";
 hero.style.height='340px';
 }

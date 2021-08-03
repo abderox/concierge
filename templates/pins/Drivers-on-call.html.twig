@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-{% block title %}Trips | {{ question }}{% endblock %}
+{% block title %}Drivers on Call{% endblock %}
 {% block body %}
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/styles.css" rel="stylesheet" />
@@ -61,7 +61,6 @@
             border-color: #8a5700;
             color: #8a5700;
         }
-
         @media (max-width: 1000px)
         {
             .alertt{
@@ -71,8 +70,6 @@
                 font-size: 35px;
             }
         }
-
-
     </style>
 
     <div id="page-top">
@@ -81,7 +78,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-heading text-uppercase">Trips Reservation</div>
+                <div class="masthead-heading text-uppercase">Drivers on Call</div>
                 <div class="masthead-subheading">We trust our clients , No prepayment is needed .. payment on arrival !</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="/">Home</a>
             </div>
@@ -91,7 +88,7 @@
         <section class="page-section" id="about" style="margin-top: 10px;" >
             <div class="container">
                 <div class="text-center">
-                    <h1 class="section-heading " style="font-family: 'Pacifico', cursive !important;">{{ question }}</h1>
+                    <h1 class="section-heading " style="font-family: 'Pacifico', cursive !important;">South VIP</h1>
                     <h2 class="section-subheading text-muted">3 nights and 4 days</h2>
                 </div>
 
@@ -205,7 +202,11 @@
         <script src="/js/slick.min.js"></script>
         <script src="/js/fresco.min.js"></script>
         <script src="/js/main.js"></script>
-
+        <script>$(".close").click(function() {
+                $(this)
+                    .parent(".alert")
+                    .fadeOut();
+            });</script>
 
 
 
