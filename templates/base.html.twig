@@ -150,6 +150,11 @@
                     .parent(".alertt")
                     .fadeOut();
             });</script>
+    <script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES
+        window.onorientationchange = function() {
+                window.location.reload();
+                     };
+        </script>
     {%  endblock %}
 
     </body>
