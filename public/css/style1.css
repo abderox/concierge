@@ -10,13 +10,19 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html,body{
+  overflow-x: hidden !important;
+}
 body{
+  overflow-y: hidden;
   background-color: #efefef;
   background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+
 }
 html{
   scrollbar-color: #A48111 #060D0D;
   scrollbar-width:large;
+  overflow-x: hidden;
 }
 
 
