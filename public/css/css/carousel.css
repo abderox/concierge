@@ -175,7 +175,7 @@
   width: 150px;
   height: 14px;
   transform: skew(-12deg) translateX(-50%);
-  background: rgba(238,111,87,0.5);
+  background: #A48111;
   z-index: -1;
 }
 
