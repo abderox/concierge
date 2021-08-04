@@ -138,4 +138,12 @@ class PinsController extends AbstractController
 
         return $this->render("pins/residence_reserv.html.twig", ['question'=>$nam]);
     }
+    /**
+     * @Route("/Private-events", name="app_private_events")
+     */
+    public function private_events($nam): Response
+    {
+
+        return $this->render("pins/private-events.html.twig");
+    }
 }
