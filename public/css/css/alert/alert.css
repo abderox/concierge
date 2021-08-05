@@ -6,6 +6,7 @@
     border-radius: 5px;
     box-shadow: 0 0 15px 5px #ccc;
     height: 40px;
+
 }
 h5{
     margin-top: -20px;
@@ -28,6 +29,22 @@ h5{
 .warning-alert {
     background-color: #A48111;
     border-left: 5px solid #5c4e1e;
+    animation-name:opac;
+    animation-delay: 5s;
+    animation-direction: normal;
+    animation-duration: 1.5s;
+
+}
+@keyframes opac {
+     0%{
+         opacity: 0 ;
+     }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+         opacity: 1;
+          }
 }
 
 

@@ -196,6 +196,11 @@ body{
   .hero-prom{
     height: 220px;
   }
+  figure{
+    width: 350px !important;;
+    height: 350px !important;;
+  }
+
   .c-form__input{
    width: 60% !important;
     margin-top: 30px !important;
@@ -294,13 +299,22 @@ body{
   }
 
 }
+@media (max-width: 380px) {
+  figure{
+    width: 330px !important;;
+    height: 330px !important;;
+  }
 
+}
 @media (max-width: 620px){
   .img-slider{
     width: 100%;
     height: 400px;
   }
-
+figure{
+  width: 350px;
+  height: 350px;
+}
   body , html{
     margin-right: 0px !important;
   }
