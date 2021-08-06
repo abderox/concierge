@@ -71,7 +71,7 @@ var hero=document.getElementById(hero);
 
 if (dots.style.display === "none") {
 dots.style.display = "inline";
-btnText.innerHTML = "More "+'<i class="fas fa-caret-up"></i>';
+btnText.innerHTML = "More "+'<i class="fas fa-caret-down"></i>';
 moreText.style.display = "none";
 hero.style.height='240px';
 } else {

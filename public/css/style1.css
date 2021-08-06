@@ -15,7 +15,7 @@ html,body{
 }
 body{
 
-  background-color: #ffffff !important;
+  background-color: #efefef  !important;
   /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 
 }
@@ -1400,7 +1400,7 @@ backdrop-filter: blur( 28.5px  );
       /*---------------------------section bg---------------------------*/
 section{
   background-color: #efefef !important;
-  background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+  /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 }
 /*------------------------Request form---------------------------------------*/
 .form-control{

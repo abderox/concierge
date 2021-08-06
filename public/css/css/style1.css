@@ -21,7 +21,7 @@ body{
   flex-wrap: wrap;
 
   /*background: #1D212B;*/
-  background-color: #ffffff !important;
+  background-color: #efefef  !important;
   /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 }
 
@@ -1394,7 +1394,7 @@ figure figcaption .button:hover{
 /*-------------------------------section bg-----------------------------------*/
 section{
   background-color: #efefef !important;
-  background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+  /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 }
 /*------------------------Request form---------------------------------------*/
 .form-control{
