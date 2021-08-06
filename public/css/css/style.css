@@ -25,8 +25,8 @@ body{
   overflow-y: hidden;
   flex-wrap: wrap;
   /*background: #1D212B;*/
-  background-color: #efefef;
-  background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+  background-color: #ffffff;
+  /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 }
 /*------------------------------------scroll bar-----------------------------*/
 

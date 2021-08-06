@@ -15,8 +15,8 @@ html,body{
 }
 body{
 
-  background-color: #efefef;
-  background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+  background-color: #ffffff !important;
+  /*background-image:linear-gradient(to top, transparent 0%, rgba(164, 129, 17, 0.13) 100%), url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");*/
 
 }
 html{
